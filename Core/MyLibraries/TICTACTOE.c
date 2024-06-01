@@ -13,8 +13,8 @@
 #include "TICTACTOE_X.c"
 
 #define ADC_DELAY 100
-#define ADC_BOTTOM_LIMITER 500
-#define ADC_UPPER_LIMITER 3500
+#define ADC_BOTTOM_LIMITER 1000
+#define ADC_UPPER_LIMITER 3000
 
 struct Pole{
 	int a;
@@ -466,12 +466,12 @@ static void TicRefreshMenu(){
 		else if(pos.b == 1){
 			LCDPutColor(WHITE);
 			LCDPutRect(0, 62, 160, 4, BLACK);
-			TicSetO(0, 0);
-			TicSetXG(1, 0);
-			TicSetOG(2, 0);
-			TicSetX(0, 2);
-			TicSetO(1, 2);
-			TicSetX(2, 2);
+			TicSetX(0, 0);
+			TicSetOG(1, 0);
+			TicSetXG(2, 0);
+			TicSetO(0, 2);
+			TicSetX(1, 2);
+			TicSetO(2, 2);
 			TicSetContour(menu2_x, menu2_y, MAGENTA);
 		}
 		LCDCopy();
