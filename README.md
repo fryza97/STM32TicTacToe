@@ -1,4 +1,4 @@
-![image](https://github.com/fryza97/STM32TicTacToe/assets/157904512/92f0eb89-a96a-4ac8-ad3e-fa8ff4abd71e)
+![image](https://github.com/fryza97/STM32TicTacToe/assets/157904512/c222b91c-038a-47dc-bb11-861c8e221d71)
 Image 1: connection scheme of the project
 
 The project uses a NUCLEO-L476RG. The MCU reads the state of the joystick (two potentiometers) via a 12-bit ADC. The LCD is an ST7735S and communication takes place through SPI in DMA mode. There are two types of gameplay which the player can choose from the menu after starting the program:
